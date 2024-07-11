@@ -1,8 +1,12 @@
+import { Suspense } from 'react'
+import ThankYou from './ThankYou'
 
-const page = () => {
+const Page = () => {
   return (
-    <div>THNAK YOUUUUUUUUUUUUUU!!!</div>
+    <Suspense>
+      <ThankYou />
+    </Suspense>
   )
 }
 
-export default page
+export default Page
